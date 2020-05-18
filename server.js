@@ -54,7 +54,8 @@ io.on('connection', socket => {
     });    
 });
 
-io.listen(3001);
+const port = process.env.PORT || 3001;
+io.listen(port);
 
 
 
